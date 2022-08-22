@@ -7,6 +7,7 @@ h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
+
 html,
 body {
 	margin: 0;
@@ -24,19 +25,19 @@ body {
 
 .header {
 	position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+	top: 0;
+	right: 0;
+	left: 0;
 	background-color: black;
-	
+	height: 80px;
 }
 
 .header .header-container {
 	padding: 0 5%;
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
-	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
 }
 
 .header a {
@@ -56,12 +57,56 @@ body {
 
 .main .banner {
 	height: 100vh;
-	background-image: url('../images/mountains_banner.jpg');
-    background-size: cover;
+	background-image: linear-gradient(to right top, #bbb7ae, #b9b39d, #b3b18d, #a9af7f, #9cae72);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
-canvas {
-    filter: blur(1px);
+.banner .left-part {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-content {
+	width: 550px;
+	height: 340px;
+	border-radius: 10px;
+	background-color: rgb(156, 174, 114, 0.6);
+	box-shadow: 10px 5px 27px 0 rgba(123, 139, 85, 0.75);
+}
+
+.banner-content:hover {
+	background-color: rgb(156, 174, 114, 0.9);
+	box-shadow: 10px 5px 27px 0 rgba(108, 122, 73, 0.75);
+}
+
+.banner-content .banner-title {
+	margin-left: 25px;
+	font-size: 30px;
+	line-height: 2rem;
+	font-weight: 700;
+}
+
+.banner-content .banner-subtitle {
+	margin-left: 25px;
+	font-size: 22px;
+	line-height: 1.5rem;
+	font-weight: 700;
+}
+
+.banner .right-part {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner .right-part .woman-img {
+	height: 900px;
 }
 
 .footer {
