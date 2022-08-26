@@ -215,6 +215,7 @@ header.sticky {
 	color: #2a3a05;
 	width: 100%;
 	margin: 30px auto;
+	cursor: default;
 }
 
 .service-title:hover h2 {
@@ -228,7 +229,7 @@ header.sticky {
 	min-height: 400px;
 }
 
-.card {
+.service-card {
 	height: 365px;
 	max-width: 335px;
 	padding: 20px 35px;
@@ -240,16 +241,99 @@ header.sticky {
 	cursor: pointer;
 }
 
-.card:hover {
+.service-card:hover {
 	transform: scale(1.01) translateY(-5px);
 }
 
-.card h5 {
+.service-card h5 {
 	font-family: 'Century Gothic Bold Italic';
 	color: #2a3a05;
 }
 
-.card:hover h5 {
+.service-card:hover h5 {
 	font-weight: 700;
 	color: #000000;
+}
+
+.projects-section {
+	main-height: 100vh;
+	background-image: linear-gradient(to right top, #bbb7ae, #b9b39d, #b3b18d, #a9af7f, #9cae72);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 100px;
+	box-sizing: border-box;
+	padding-bottom: 50px;
+}
+
+.projects-title h2 {
+	font-family: 'Century Gothic Bold Italic';
+	font-size: 55px;
+	color: #2a3a05;
+	width: 100%;
+	margin: 30px auto;
+	cursor: default;
+}
+
+.projects-title:hover h2 {
+	color: #000;
+}
+
+.projects-box {
+	max-width: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	flex-wrap: wrap;
+}
+
+.project-card {
+	height: 365px;
+	width: 250px;
+	border-radius: 15px;
+	background-color: rgb(156, 174, 114, 0.6);
+	box-shadow: 10px 5px 27px 0 rgba(123, 139, 85, 0.75);
+	margin: 25px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+}
+
+.project-card:hover {
+	transform: scale(1.01) translateY(-5px);
+}
+
+.project-explain {
+	padding: 10px;
+}
+
+.project-image {
+	height: 210px;
+	display: flex;
+	align-items: center;
+	background-color: #9cae72;
+	border-radius: 10px 10px 0 0;
+}
+
+.project-image img {
+	width: 100%;
+}
+
+.project-title {
+	font-size: 21px;
+	font-weight: 700;
+	color: #2a3a05;
+}
+
+.project-card:hover .project-title {
+	color: #000;
+}
+
+.project-description {
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: 400;
 }
