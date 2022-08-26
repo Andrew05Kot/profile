@@ -110,7 +110,7 @@ header.sticky {
 }
 
 .banner .right-part .woman-img {
-	height: 900px;
+	width: 100%;
 }
 
 .footer {
@@ -127,12 +127,17 @@ header.sticky {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
-	gap: 2rem
+	gap: 2rem;
+	cursor: default;
 }
 
 .about-img {
 	max-height: 800px;
-	height: 100%;
+	width: 100%;
+}
+
+.about-img img {
+	transform: scaleX(-1);
 }
 
 .about-text {
@@ -184,11 +189,12 @@ header.sticky {
 
 .service-title h2 {
 	font-size: 50px;
+	color: #2a3a05;
 	width: 100%;
 	margin: 30px auto;
 }
 
-.box {
+.services-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -197,20 +203,26 @@ header.sticky {
 
 .card {
 	height: 365px;
-	width: 335px;
+	max-width: 335px;
 	padding: 20px 35px;
 	border-radius: 10px;
 	background-color: rgb(156, 174, 114, 0.6);
 	box-shadow: 10px 5px 27px 0 rgba(123, 139, 85, 0.75);
-	margin: 15px;
+	margin: 0 25px;
 	text-align: center;
+	cursor: pointer;
+}
+
+.card:hover {
+	transform: scale(1.01) translateY(-5px);
 }
 
 .card h5 {
 	font-weight: 700;
+	color: #2a3a05;
 }
 
-.read-more {
-	text-align: center;
+.card:hover h5 {
+	font-weight: 700;
+	color: #000000;
 }
-
