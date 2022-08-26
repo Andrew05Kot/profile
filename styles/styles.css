@@ -75,12 +75,17 @@ header.sticky {
 }
 
 .banner-content {
-	width: 550px;
+	width: 580px;
 	height: 340px;
 	padding: 20px;
+	padding-right: 28px;
 	border-radius: 10px;
 	background-color: rgb(156, 174, 114, 0.6);
 	box-shadow: 10px 5px 27px 0 rgba(123, 139, 85, 0.75);
+}
+
+.banner-content * {
+	cursor: default !important;
 }
 
 .banner-content:hover {
@@ -89,13 +94,19 @@ header.sticky {
 }
 
 .banner-content .banner-title {
-	margin-left: 25px;
+	font-family: 'Century Gothic Bold Italic';
 	font-size: 30px;
 	line-height: 2rem;
-	font-weight: 700;
+	color: #2a3a05;
+	margin-left: 25px;
+}
+
+.banner-content:hover .banner-title {
+	color: #000;
 }
 
 .banner-content .banner-subtitle {
+	font-family: 'Century Gothic Regular';
 	margin-left: 25px;
 	font-size: 22px;
 	line-height: 1.5rem;
@@ -144,20 +155,29 @@ header.sticky {
 	max-width: 650px;
 }
 
-.about-text h4 {
-	margin: 10px 0;
-	color: black;
-	font-size: 20px;
-	font-weight: 700;
+.about-text h2 {
+	font-family: 'Century Gothic Bold Italic';
+	font-size: 38px;
+	color: #2a3a05;
 }
 
-.about-text h2 {
-	font-size: 32px;
-	font-weight: 600;
+.about-text h4 {
+	font-family: 'Century Gothic Bold Italic';
+	font-size: 24px;
+	color: #2a3a05;
+	margin: 10px 0;
+}
+
+.about-text:hover h2 {
+	color: #000;
+}
+
+.about-text:hover h4 {
+	color: #000;
 }
 
 .about-text p {
-	color: black;
+	font-family: 'Century Gothic Bold Italic';
 	font-size: 18px;
 	line-height: 30px;
 	margin-bottom: 2rem;
@@ -182,16 +202,23 @@ header.sticky {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	padding: 0 100px;
+	padding-top: 8%;
+	box-sizing: border-box;
 }
 
 .service-title h2 {
-	font-size: 50px;
+	font-family: 'Century Gothic Bold Italic';
+	font-size: 55px;
 	color: #2a3a05;
 	width: 100%;
 	margin: 30px auto;
+}
+
+.service-title:hover h2 {
+	color: #000;
 }
 
 .services-box {
@@ -218,7 +245,7 @@ header.sticky {
 }
 
 .card h5 {
-	font-weight: 700;
+	font-family: 'Century Gothic Bold Italic';
 	color: #2a3a05;
 }
 
