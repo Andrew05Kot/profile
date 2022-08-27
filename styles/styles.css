@@ -54,6 +54,15 @@ header.sticky {
 	backdrop-filter: blur(7px);
 }
 
+.nav-bar a {
+	padding: 7px;
+	border-radius: 5%;
+}
+
+.nav-bar a:hover {
+	background-color: #475e12;
+}
+
 .main {
 	flex: 1 1 auto;
 }
