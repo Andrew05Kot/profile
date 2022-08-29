@@ -189,20 +189,18 @@ header.sticky {
 	font-family: 'Century Gothic Bold';
 	font-size: 18px;
 	line-height: 30px;
-	margin-bottom: 2rem;
 }
 
-.about-gri {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-	align-items: center;
-	gap: 1rem;
+.about-list {
+	display: flex;
+	flex-direction: column;
 }
 
 .about-in h5 {
+	margin: 0;
+	margin-top: 10px;
 	font-size: 18px;
 	font-weight: 600;
-	height: 5px;
 }
 
 .services-section {
