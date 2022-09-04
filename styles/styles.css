@@ -39,6 +39,12 @@ header {
 	height: 100%;
 }
 
+.header img {
+	width: 30px;
+	cursor: pointer;
+	display: none;
+}
+
 .header a {
 	text-decoration: none;
 	font-size: 18px;
@@ -432,4 +438,24 @@ header.sticky {
 	background-color: #000;
 	color: #fff;
 	transform: scale(1.01) translateY(-5px) translateX(-5px);
+}
+
+@media (max-width: 720px) {
+
+	.header img {
+		display: initial;
+	}
+
+	.header .nav-bar {
+		position: absolute;
+		padding: 10px;
+		top: 55px;
+		right: 29px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		height: 180px;
+		width: 40vw;
+		background-color: rgba(156, 174, 114, 0.9);
+	}
 }
