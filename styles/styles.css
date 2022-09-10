@@ -60,6 +60,15 @@ header.sticky {
 	backdrop-filter: blur(7px);
 }
 
+.header .logo {
+	font-size: 27px;
+	font-family: 'Century Gothic Bold';
+}
+
+.nav-bar {
+	visibility: visible;
+}
+
 .nav-bar a {
 	padding: 7px;
 	border-radius: 5%;
@@ -440,22 +449,31 @@ header.sticky {
 	transform: scale(1.01) translateY(-5px) translateX(-5px);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 861px) {
 
 	.header img {
 		display: initial;
 	}
 
-	.header .nav-bar {
+	.nav-bar {
+		visibility: hidden;
+	}
+
+	.nav-bar {
 		position: absolute;
 		padding: 10px;
-		top: 55px;
-		right: 29px;
+		top: 85px;
+		right: 15px;
 		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
-		height: 180px;
+		height: 200px;
 		width: 40vw;
 		background-color: rgba(156, 174, 114, 0.9);
+	}
+
+	.nav-bar a {
+		padding: 10px;
+		font-size: 21px;
 	}
 }
